@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kit Mente Ativa | +600 Atividades Infantis</title>
+
+<meta name="description" content="Mais de 600 atividades educativas para imprimir e utilizar com as crianças.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+/* ==============================
+   BASE
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',Arial,sans-serif;
+    background:#f7fbff;
+    color:#172033;
+    overflow-x:hidden;
+    padding-bottom:82px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+:root{
+    --azul:#147ee8;
+    --azul-escuro:#0759b3;
+    --azul-claro:#eaf5ff;
+    --verde:#18b85b;
+    --verde-escuro:#0c843d;
+    --amarelo:#ffd83d;
+    --texto:#172033;
+    --cinza:#657286;
+    --branco:#ffffff;
+}
+
+.container{
+    width:100%;
+    max-width:560px;
+    margin:auto;
+}
+
+/* ==============================
+   BARRA SUPERIOR
+============================== */
+
+.topbar{
+    background:#101d34;
+    color:#fff;
+    padding:11px 15px;
+    text-align:center;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.4px;
+}
+
+.topbar span{
+    color:#ffd83d;
+}
+
+/* ==============================
+   HERO
+============================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:38px 18px 58px;
+
+    background:
+        radial-gradient(circle at 10% 10%,rgba(255,216,61,.24),transparent 24%),
+        radial-gradient(circle at 95% 35%,rgba(20,126,232,.16),transparent 30%),
+        linear-gradient(180deg,#f2f9ff 0%,#ffffff 100%);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:#dff0ff;
+    top:-95px;
+    right:-65px;
+    z-index:0;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:#fff2a9;
+    left:-70px;
+    bottom:140px;
+    z-index:0;
+}
+
+.hero .container{
+    position:relative;
+    z-index:1;
+    text-align:center;
+}
+
+.tag{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+
+    background:#fff;
+    border:1px solid #d9eaff;
+
+    padding:8px 14px;
+    border-radius:50px;
+
+    color:#086ccf;
+    font-size:11px;
+    font-weight:800;
+
+    box-shadow:0 5px 20px rgba(26,93,160,.08);
+
+    margin-bottom:17px;
+}
+
+.hero h1{
+    font-size:34px;
+    line-height:1.06;
+    letter-spacing:-1.3px;
+    font-weight:900;
+    margin:auto;
+}
+
+.destaque{
+    color:var(--azul);
+}
+
+.marca-texto{
+    position:relative;
+    display:inline-block;
+    z-index:1;
+}
+
+.marca-texto::after{
+    content:"";
+    position:absolute;
+    height:9px;
+    left:0;
+    right:0;
+    bottom:1px;
+    background:#ffdf55;
+    opacity:.55;
+    z-index:-1;
+    border-radius:10px;
+}
+
+.hero-sub{
+    max-width:490px;
+    margin:17px auto 22px;
+    color:#5c6b7d;
+    font-size:15px;
+    line-height:1.6;
+}
+
+.hero-sub strong{
+    color:#26364b;
+}
+
+/* BANNER */
+
+.banner-card{
+    position:relative;
+    margin:25px auto 22px;
+
+    border-radius:24px;
+    overflow:hidden;
+
+    background:white;
+    border:5px solid white;
+
+    box-shadow:
+        0 20px 50px rgba(22,67,113,.18),
+        0 3px 10px rgba(22,67,113,.08);
+}
+
+.banner-card img{
+    width:100%;
+    height:auto;
+    border-radius:19px;
+}
+
+.banner-selo{
+    position:absolute;
+    bottom:12px;
+    left:12px;
+
+    background:rgba(13,31,55,.93);
+    color:white;
+
+    padding:9px 13px;
+    border-radius:12px;
+
+    font-size:11px;
+    font-weight:700;
+
+    backdrop-filter:blur(6px);
+}
+
+.banner-selo strong{
+    color:#ffdc45;
+}
+
+/* MINI BENEFÍCIOS */
+
+.mini-beneficios{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    margin:17px 0 5px;
+}
+
+.mini-beneficio{
+    background:rgba(255,255,255,.9);
+    border:1px solid #e3edf6;
+    border-radius:15px;
+    padding:11px 5px;
+}
+
+.mini-beneficio span{
+    font-size:21px;
+    display:block;
+}
+
+.mini-beneficio strong{
+    display:block;
+    font-size:10px;
+    margin-top:4px;
+}
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.btn{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-height:64px;
+
+    color:#fff;
+    background:linear-gradient(180deg,#24c76a,#13a951);
+
+    border-radius:16px;
+    padding:13px 15px;
+
+    font-size:16px;
+    font-weight:900;
+    letter-spacing:-.2px;
+
+    box-shadow:
+        0 7px 0 var(--verde-escuro),
+        0 16px 30px rgba(20,176,85,.22);
+
+    transition:.2s ease;
+}
+
+.btn:active{
+    transform:translateY(4px);
+    box-shadow:
+        0 3px 0 var(--verde-escuro),
+        0 9px 20px rgba(20,176,85,.18);
+}
+
+.btn small{
+    font-size:10px;
+    font-weight:600;
+    opacity:.92;
+    margin-top:3px;
+}
+
+.pulse{
+    animation:pulse 2.3s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow:
+            0 7px 0 var(--verde-escuro),
+            0 0 0 0 rgba(32,191,99,.35);
+    }
+
+    70%{
+        box-shadow:
+            0 7px 0 var(--verde-escuro),
+            0 0 0 13px rgba(32,191,99,0);
+    }
+
+    100%{
+        box-shadow:
+            0 7px 0 var(--verde-escuro),
+            0 0 0 0 rgba(32,191,99,0);
+    }
+}
+
+/* ==============================
+   PADRÃO DE SEÇÃO
+============================== */
+
+.secao{
+    position:relative;
+    padding:65px 19px;
+}
+
+.kicker{
+    display:inline-flex;
+    align-items:center;
+
+    padding:7px 12px;
+    border-radius:50px;
+
+    background:#e7f3ff;
+    color:#0873d5;
+
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:.7px;
+
+    margin-bottom:13px;
+}
+
+.titulo{
+    font-size:27px;
+    line-height:1.13;
+    letter-spacing:-.8px;
+    font-weight:900;
+    margin-bottom:14px;
+}
+
+.descricao{
+    color:var(--cinza);
+    font-size:14px;
+    line-height:1.65;
+}
+
+/* ==============================
+   PROBLEMA
+============================== */
+
+.problema{
+    background:
+        radial-gradient(circle at 100% 0,#e8f5ff,transparent 27%),
+        #fff;
+}
+
+.problema-intro{
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    gap:11px;
+    margin-top:27px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    background:#fff;
+    border:1px solid #e6edf5;
+    border-radius:18px;
+
+    padding:16px;
+
+    box-shadow:0 8px 25px rgba(36,71,110,.06);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:4px;
+    background:var(--azul);
+}
+
+.card-icon{
+    min-width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#edf7ff;
+    border-radius:13px;
+
+    font-size:22px;
+}
+
+.card strong{
+    font-size:13px;
+    line-height:1.35;
+}
+
+/* ==============================
+   NÚMERO
+============================== */
+
+.quantidade{
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 0 0,rgba(255,255,255,.15),transparent 28%),
+        radial-gradient(circle at 100% 100%,rgba(255,216,61,.24),transparent 30%),
+        linear-gradient(135deg,#0868cf,#1794ed);
+
+    color:#fff;
+    padding:65px 20px;
+    text-align:center;
+}
+
+.quantidade::before{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:150px;
+    border:25px solid rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-90px;
+    left:-70px;
+}
+
+.quantidade small{
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.numero{
+    font-size:86px;
+    line-height:.95;
+    font-weight:900;
+    letter-spacing:-6px;
+    margin:12px 0 4px;
+
+    text-shadow:0 8px 25px rgba(0,50,110,.2);
+}
+
+.quantidade h2{
+    font-size:23px;
+    font-weight:900;
+}
+
+.quantidade p{
+    font-size:13px;
+    margin-top:7px;
+    opacity:.9;
+}
+
+.quantidade-badges{
+    max-width:460px;
+    margin:23px auto 0;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:7px;
+}
+
+.quantidade-badges span{
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.2);
+
+    padding:7px 10px;
+    border-radius:50px;
+
+    font-size:9px;
+    font-weight:700;
+}
+
+/* ==============================
+   BENEFÍCIOS
+============================== */
+
+.beneficios{
+    background:#f4f9ff;
+}
+
+.beneficios .titulo,
+.beneficios > .container > .descricao{
+    text-align:center;
+}
+
+.beneficios .kicker{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.lista-beneficios{
+    display:grid;
+    gap:12px;
+    margin-top:28px;
+}
+
+.beneficio{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.94);
+    border:1px solid #e6edf5;
+
+    box-shadow:0 10px 30px rgba(34,73,116,.06);
+}
+
+.beneficio-icon{
+    min-width:50px;
+    height:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(145deg,#eaf6ff,#fff);
+    border:1px solid #dceeff;
+
+    border-radius:15px;
+    font-size:23px;
+}
+
+.beneficio h3{
+    font-size:15px;
+    margin-bottom:4px;
+    font-weight:800;
+}
+
+.beneficio p{
+    color:#6b7889;
+    font-size:12px;
+    line-height:1.55;
+}
+
+/* ==============================
+   GALERIA
+============================== */
+
+.galeria-secao{
+    background:
+        radial-gradient(circle at 0 25%,rgba(255,220,69,.16),transparent 24%),
+        #fff;
+}
+
+.galeria-secao .cabecalho{
+    text-align:center;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:11px;
+    margin-top:27px;
+}
+
+.item-galeria{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+    border:1px solid #e5ebf2;
+    border-radius:18px;
+
+    box-shadow:0 10px 28px rgba(25,59,95,.10);
+}
+
+.item-galeria img{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+}
+
+.item-galeria-info{
+    padding:11px 7px 12px;
+    text-align:center;
+}
+
+.item-galeria strong{
+    display:block;
+    font-size:11px;
+    font-weight:800;
+}
+
+.item-galeria span{
+    display:block;
+    color:#748092;
+    font-size:9px;
+    margin-top:2px;
+}
+
+.galeria-destaque{
+    margin-top:23px;
+
+    background:#fff8d9;
+    border:1px solid #f6df7c;
+    border-radius:16px;
+
+    padding:15px;
+
+    text-align:center;
+    font-size:11px;
+    font-weight:700;
+    line-height:1.5;
+}
+
+/* ==============================
+   INCLUSIVO
+============================== */
+
+.autismo{
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 100% 0,#bde8ff,transparent 28%),
+        linear-gradient(180deg,#eaf8ff,#f8fcff);
+}
+
+.autismo::after{
+    content:"";
+    position:absolute;
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:rgba(27,144,230,.07);
+    bottom:-60px;
+    left:-60px;
+}
+
+.selo-autismo{
+    display:inline-flex;
+    background:#0c7dd6;
+    color:white;
+
+    padding:7px 12px;
+    border-radius:50px;
+
+    font-size:10px;
+    font-weight:800;
+
+    margin-bottom:14px;
+}
+
+.autismo .titulo{
+    font-size:28px;
+}
+
+.autismo-box{
+    position:relative;
+    z-index:1;
+
+    background:rgba(255,255,255,.92);
+    border:1px solid #d9edf8;
+
+    padding:8px 18px;
+    border-radius:20px;
+
+    margin-top:24px;
+
+    box-shadow:0 15px 35px rgba(24,101,155,.08);
+}
+
+.autismo-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:13px 0;
+    border-bottom:1px solid #e7f0f5;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.autismo-item:last-child{
+    border-bottom:0;
+}
+
+/* ==============================
+   COMO FUNCIONA
+============================== */
+
+.passos{
+    background:#fff;
+}
+
+.passos .cabecalho{
+    text-align:center;
+}
+
+.timeline{
+    margin-top:30px;
+}
+
+.passo{
+    position:relative;
+    display:flex;
+    gap:15px;
+    padding-bottom:27px;
+}
+
+.passo:not(:last-child)::before{
+    content:"";
+    position:absolute;
+    width:2px;
+    top:45px;
+    bottom:0;
+    left:21px;
+    background:#dcecff;
+}
+
+.passo-numero{
+    position:relative;
+    z-index:2;
+
+    min-width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(145deg,#1596f3,#086bce);
+    color:#fff;
+
+    font-size:14px;
+    font-weight:900;
+
+    box-shadow:0 7px 15px rgba(13,121,215,.22);
+}
+
+.passo h3{
+    font-size:15px;
+    margin:2px 0 4px;
+}
+
+.passo p{
+    color:#6c7989;
+    font-size:12px;
+    line-height:1.55;
+}
+
+/* ==============================
+   OFERTA
+============================== */
+
+.oferta{
+    position:relative;
+    overflow:hidden;
+
+    padding:70px 18px;
+
+    color:#fff;
+
+    background:
+        radial-gradient(circle at 0 0,rgba(33,132,231,.25),transparent 30%),
+        radial-gradient(circle at 100% 100%,rgba(255,216,61,.12),transparent 30%),
+        #101d34;
+}
+
+.oferta .container{
+    text-align:center;
+}
+
+.oferta-tag{
+    display:inline-block;
+
+    padding:8px 14px;
+    border-radius:50px;
+
+    background:#ffda3e;
+    color:#493900;
+
+    font-size:10px;
+    font-weight:900;
+
+    margin-bottom:14px;
+}
+
+.oferta h2{
+    font-size:32px;
+    line-height:1.05;
+    font-weight:900;
+    letter-spacing:-1px;
+}
+
+.oferta-sub{
+    color:#c6d1df;
+    font-size:13px;
+    margin:10px auto 24px;
+    line-height:1.6;
+}
+
+.oferta-box{
+    background:#fff;
+    color:#172033;
+
+    border-radius:25px;
+    padding:23px 17px;
+
+    border:1px solid rgba(255,255,255,.6);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.28);
+}
+
+.oferta-lista{
+    text-align:left;
+    margin-bottom:23px;
+}
+
+.oferta-item{
+    display:flex;
+    gap:10px;
+    align-items:center;
+
+    padding:10px 3px;
+
+    border-bottom:1px solid #e9eef3;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.check{
+    min-width:22px;
+    height:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:#e5f9ed;
+    color:#0c9c49;
+
+    font-size:11px;
+}
+
+.preco-area{
+    background:#f7faff;
+    border-radius:18px;
+    padding:17px 10px;
+}
+
+.de{
+    color:#8994a1;
+    text-decoration:line-through;
+    font-size:12px;
+}
+
+.hoje{
+    color:#485669;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1px;
+    margin-top:5px;
+}
+
+.preco{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    color:#111c2d;
+    line-height:1;
+
+    margin:5px 0;
+}
+
+.preco .rs{
+    font-size:18px;
+    font-weight:800;
+    margin-top:9px;
+    margin-right:4px;
+}
+
+.preco .valor{
+    font-size:60px;
+    letter-spacing:-4px;
+    font-weight:900;
+}
+
+.preco .centavos{
+    font-size:18px;
+    font-weight:900;
+    margin-top:8px;
+}
+
+.pagamento{
+    color:#778493;
+    font-size:9px;
+}
+
+.oferta-seguranca{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+
+    margin-top:16px;
+
+    color:#748091;
+    font-size:9px;
+    font-weight:600;
+}
+
+/* ==============================
+   FAQ
+============================== */
+
+.faq{
+    background:#f4f9ff;
+}
+
+.faq .cabecalho{
+    text-align:center;
+}
+
+.perguntas{
+    margin-top:27px;
+}
+
+.pergunta{
+    background:#fff;
+    border:1px solid #e3eaf2;
+    border-radius:17px;
+
+    padding:17px;
+    margin-bottom:10px;
+
+    box-shadow:0 7px 22px rgba(32,65,101,.04);
+}
+
+.pergunta strong{
+    display:block;
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.pergunta p{
+    color:#6a7787;
+    font-size:11px;
+    line-height:1.6;
+}
+
+/* ==============================
+   FINAL
+============================== */
+
+.final{
+    position:relative;
+    overflow:hidden;
+
+    padding:65px 19px 105px;
+
+    text-align:center;
+
+    background:
+        radial-gradient(circle at 50% 100%,#d9efff,transparent 38%),
+        #fff;
+}
+
+.final h2{
+    font-size:27px;
+    line-height:1.12;
+    letter-spacing:-.8px;
+    font-weight:900;
+}
+
+.final p{
+    color:#697789;
+    font-size:13px;
+    margin:13px 0 22px;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.rodape{
+    background:#101d34;
+    color:#8fa0b5;
+
+    text-align:center;
+    padding:28px 20px 105px;
+
+    font-size:9px;
+    line-height:1.6;
+}
+
+.rodape strong{
+    color:#fff;
+    display:block;
+    margin-bottom:7px;
+}
+
+/* ==============================
+   BOTÃO FIXO MOBILE
+============================== */
+
+.fixo{
+    position:fixed;
+    z-index:999;
+
+    bottom:0;
+    left:0;
+    right:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+
+    padding:
+        9px
+        max(12px,env(safe-area-inset-right))
+        calc(9px + env(safe-area-inset-bottom))
+        max(12px,env(safe-area-inset-left));
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+
+    border-top:1px solid #e2e8ef;
+
+    box-shadow:0 -8px 30px rgba(15,36,60,.10);
+}
+
+.fixo-preco{
+    display:flex;
+    flex-direction:column;
+}
+
+.fixo-preco small{
+    color:#778392;
+    font-size:8px;
+    font-weight:800;
+}
+
+.fixo-preco strong{
+    font-size:18px;
+    line-height:1.1;
+}
+
+.fixo a{
+    display:block;
+
+    background:linear-gradient(180deg,#22c768,#13a64f);
+    color:#fff;
+
+    padding:12px 16px;
+    border-radius:12px;
+
+    font-size:11px;
+    font-weight:900;
+
+    box-shadow:0 5px 12px rgba(18,166,78,.2);
+}
+
+/* ==============================
+   DESKTOP
+============================== */
+
+@media(min-width:700px){
+
+    body{
+        padding-bottom:0;
+    }
+
+    .hero{
+        padding-top:60px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .titulo{
+        font-size:34px;
+    }
+
+    .galeria{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .fixo{
+        display:none;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- BARRA SUPERIOR -->
+
+<div class="topbar">
+    🔥 <span>ACESSO DIGITAL</span> • BAIXE, IMPRIMA E COMECE
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+    <div class="tag">
+        🧠 APRENDIZADO + DIVERSÃO
+    </div>
+
+    <h1>
+        Transforme o tempo livre em
+        <span class="destaque">momentos de aprendizado</span>
+    </h1>
+
+    <p class="hero-sub">
+        Uma biblioteca com <strong>centenas de atividades educativas</strong>
+        prontas para baixar, imprimir e utilizar com as crianças.
+    </p>
+
+
+    <div class="banner-card">
+
+        <img
+            src="img/banner.jpg"
+            alt="Kit de atividades educativas infantis"
+        >
+
+        <div class="banner-selo">
+            📚 <strong>+600 atividades</strong> para explorar
+        </div>
+
+    </div>
+
+
+    <div class="mini-beneficios">
+
+        <div class="mini-beneficio">
+            <span>🧠</span>
+            <strong>Raciocínio</strong>
+        </div>
+
+        <div class="mini-beneficio">
+            <span>🎯</span>
+            <strong>Atenção</strong>
+        </div>
+
+        <div class="mini-beneficio">
+            <span>✏️</span>
+            <strong>Aprendizado</strong>
+        </div>
+
+    </div>
+
+
+    <a href="#atividades" class="btn pulse">
+
+        QUERO CONHECER O KIT
+
+        <small>
+            👇 Veja tudo que está incluído
+        </small>
+
+    </a>
+
+</div>
+
+</section>
+
+
+
+<!-- PROBLEMA -->
+
+<section class="secao problema">
+
+<div class="container problema-intro">
+
+    <div class="kicker">
+        ✨ UMA NOVA OPÇÃO PARA A ROTINA
+    </div>
+
+    <h2 class="titulo">
+        Mais oportunidades para
+        <span class="destaque">aprender brincando</span>
+    </h2>
+
+    <p class="descricao">
+        Tenha atividades prontas sempre à mão para criar
+        momentos de descoberta, desafios e diversão dentro de casa.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">📱</div>
+
+            <strong>
+                Uma alternativa para alguns momentos longe das telas
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">🧩</div>
+
+            <strong>
+                Diferentes desafios de raciocínio e associação
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">🎯</div>
+
+            <strong>
+                Atividades que convidam à atenção e observação
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">👩‍👦</div>
+
+            <strong>
+                Novas possibilidades de interação em família
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- +600 -->
+
+<section class="quantidade">
+
+<div class="container">
+
+    <small>
+        DENTRO DO KIT VOCÊ ENCONTRA
+    </small>
+
+    <div class="numero">
+        +600
+    </div>
+
+    <h2>
+        ATIVIDADES EDUCATIVAS
+    </h2>
+
+    <p>
+        organizadas em diferentes categorias
+    </p>
+
+
+    <div class="quantidade-badges">
+
+        <span>🧠 Lógica</span>
+
+        <span>🎯 Atenção</span>
+
+        <span>✍️ Coordenação</span>
+
+        <span>🔤 Alfabetização</span>
+
+        <span>🔢 Matemática</span>
+
+        <span>💙 Visuais</span>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- BENEFÍCIOS -->
+
+<section class="secao beneficios">
+
+<div class="container">
+
+    <div class="kicker">
+        🌟 APRENDER DE FORMAS DIFERENTES
+    </div>
+
+    <h2 class="titulo">
+        Muito mais do que
+        <span class="destaque">simples desenhos</span>
+    </h2>
+
+    <p class="descricao">
+        Uma coleção com diferentes tipos de atividades para
+        complementar momentos educativos de maneira divertida.
+    </p>
+
+
+    <div class="lista-beneficios">
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">🧠</div>
+
+            <div>
+
+                <h3>
+                    Raciocínio e lógica
+                </h3>
+
+                <p>
+                    Sequências, associações, padrões,
+                    labirintos e pequenos desafios.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">🎯</div>
+
+            <div>
+
+                <h3>
+                    Atenção e observação
+                </h3>
+
+                <p>
+                    Exercícios para observar detalhes,
+                    comparar elementos e encontrar respostas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">✍️</div>
+
+            <div>
+
+                <h3>
+                    Coordenação motora
+                </h3>
+
+                <p>
+                    Traçados, pintura, caminhos e outras
+                    atividades manuais.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">🔤</div>
+
+            <div>
+
+                <h3>
+                    Alfabetização
+                </h3>
+
+                <p>
+                    Letras, palavras, vogais, associações
+                    e exercícios de linguagem.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">🔢</div>
+
+            <div>
+
+                <h3>
+                    Matemática infantil
+                </h3>
+
+                <p>
+                    Números, quantidades, contagem,
+                    sequências e exercícios simples.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- GALERIA -->
+
+<section class="secao galeria-secao" id="atividades">
+
+<div class="container">
+
+    <div class="cabecalho">
+
+        <div class="kicker">
+            👀 VEJA O MATERIAL
+        </div>
+
+        <h2 class="titulo">
+            Conheça algumas das
+            <span class="marca-texto">categorias</span>
+        </h2>
+
+        <p class="descricao">
+            O kit reúne atividades variadas para você escolher
+            conforme o momento e a necessidade.
+        </p>
+
+    </div>
+
+
+    <div class="galeria">
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/raciocinio.jpg"
+                alt="Atividades de raciocínio"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    🧠 Raciocínio
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/atencao.jpg"
+                alt="Atividades de atenção"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    🎯 Atenção
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/coordenacao.jpg"
+                alt="Atividades de coordenação motora"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    ✍️ Coordenação
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/alfabetizacao.jpg"
+                alt="Atividades de alfabetização"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    🔤 Alfabetização
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/matematica.jpg"
+                alt="Atividades de matemática"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    🔢 Matemática
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="item-galeria">
+
+            <img
+                src="img/visual.jpg"
+                alt="Atividades visuais e estruturadas"
+            >
+
+            <div class="item-galeria-info">
+
+                <strong>
+                    💙 Visuais
+                </strong>
+
+                <span>
+                    100 atividades
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="galeria-destaque">
+        📚 São <strong>6 categorias diferentes</strong>
+        para você ter novas opções de atividades sempre que precisar.
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- INCLUSIVO -->
+
+<section class="secao autismo">
+
+<div class="container">
+
+    <div class="selo-autismo">
+        💙 CONTEÚDO INCLUSIVO
+    </div>
+
+    <h2 class="titulo">
+        Atividades visuais e estruturadas para
+        <span class="destaque">
+            diferentes necessidades de aprendizagem
+        </span>
+    </h2>
+
+    <p class="descricao">
+        O kit também possui uma seleção com propostas mais
+        visuais, objetivas e organizadas, que podem ser utilizadas
+        com crianças autistas conforme suas necessidades individuais.
+    </p>
+
+
+    <div class="autismo-box">
+
+        <div class="autismo-item">
+            💙 Pareamento de figuras
+        </div>
+
+        <div class="autismo-item">
+            🧩 Exercícios de associação
+        </div>
+
+        <div class="autismo-item">
+            🎯 Propostas visuais objetivas
+        </div>
+
+        <div class="autismo-item">
+            🌈 Cores, categorias e emoções
+        </div>
+
+        <div class="autismo-item">
+            📋 Sequências e organização visual
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- COMO FUNCIONA -->
+
+<section class="secao passos">
+
+<div class="container">
+
+    <div class="cabecalho">
+
+        <div class="kicker">
+            ⚡ SIMPLES E RÁPIDO
+        </div>
+
+        <h2 class="titulo">
+            Como você recebe?
+        </h2>
+
+        <p class="descricao">
+            O produto é totalmente digital.
+        </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <div class="passo">
+
+            <div class="passo-numero">
+                1
+            </div>
+
+            <div>
+
+                <h3>
+                    Faça seu pedido
+                </h3>
+
+                <p>
+                    Clique no botão e finalize sua compra
+                    pelo checkout.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="passo">
+
+            <div class="passo-numero">
+                2
+            </div>
+
+            <div>
+
+                <h3>
+                    Receba o acesso
+                </h3>
+
+                <p>
+                    Após a confirmação, você recebe as
+                    instruções para acessar o material.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="passo">
+
+            <div class="passo-numero">
+                3
+            </div>
+
+            <div>
+
+                <h3>
+                    Escolha e imprima
+                </h3>
+
+                <p>
+                    Selecione as atividades que deseja
+                    utilizar e imprima quando precisar.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- OFERTA -->
+
+<section class="oferta" id="oferta">
+
+<div class="container">
+
+    <div class="oferta-tag">
+        🔥 OFERTA ESPECIAL
+    </div>
+
+    <h2>
+        LEVE O KIT COMPLETO
+    </h2>
+
+    <p class="oferta-sub">
+        Uma biblioteca digital de atividades para
+        ter sempre à disposição.
+    </p>
+
+
+    <div class="oferta-box">
+
+
+        <div class="oferta-lista">
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    +600 atividades educativas
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades de raciocínio
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades de atenção
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades de coordenação
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades de alfabetização
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades de matemática
+                </span>
+
+            </div>
+
+
+            <div class="oferta-item">
+
+                <div class="check">✓</div>
+
+                <span>
+                    100 atividades visuais e estruturadas
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="preco-area">
+
+            <div class="de">
+                De R$ 47,00
+            </div>
+
+            <div class="hoje">
+                HOJE POR APENAS
+            </div>
+
+
+            <div class="preco">
+
+                <span class="rs">
+                    R$
+                </span>
+
+                <span class="valor">
+                    10
+                </span>
+
+                <span class="centavos">
+                    ,90
+                </span>
+
+            </div>
+
+
+            <div class="pagamento">
+                pagamento único
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://pay.kiwify.com.br/ijBXIh8"
+            class="btn pulse"
+        >
+
+            🔒 QUERO ACESSAR AGORA
+
+            <small>
+                Clique para continuar para o pagamento
+            </small>
+
+        </a>
+
+
+        <div class="oferta-seguranca">
+
+            <span>
+                🔐 Compra segura
+            </span>
+
+            <span>
+                ⚡ Produto digital
+            </span>
+
+            <span>
+                📲 Acesso online
+            </span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section class="secao faq">
+
+<div class="container">
+
+    <div class="cabecalho">
+
+        <div class="kicker">
+            ❓ DÚVIDAS FREQUENTES
+        </div>
+
+        <h2 class="titulo">
+            Antes de garantir o seu
+        </h2>
+
+    </div>
+
+
+    <div class="perguntas">
+
+
+        <div class="pergunta">
+
+            <strong>
+                📲 Como recebo as atividades?
+            </strong>
+
+            <p>
+                O produto é digital. Após a confirmação da compra,
+                você receberá as instruções para acessar o material.
+            </p>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <strong>
+                📦 Vou receber alguma coisa em casa?
+            </strong>
+
+            <p>
+                Não. O kit é totalmente digital e não possui
+                envio físico.
+            </p>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <strong>
+                🖨️ Preciso imprimir todas as atividades?
+            </strong>
+
+            <p>
+                Não. Você pode selecionar apenas as atividades
+                que deseja utilizar e imprimir quando precisar.
+            </p>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <strong>
+                💙 Existem atividades inclusivas?
+            </strong>
+
+            <p>
+                Sim. Há uma categoria de atividades mais visuais
+                e estruturadas para diferentes necessidades de aprendizagem.
+            </p>
+
+        </div>
+
+
+        <div class="pergunta">
+
+            <strong>
+                🧠 As atividades garantem algum resultado?
+            </strong>
+
+            <p>
+                Não existe resultado individual garantido. O material
+                oferece propostas educativas para complementar momentos
+                de aprendizagem e diversão.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+<div class="container">
+
+    <div class="kicker">
+        📚 +600 ATIVIDADES
+    </div>
+
+    <h2>
+        Tenha uma biblioteca de atividades
+        <span class="destaque">
+            sempre à mão
+        </span>
+    </h2>
+
+    <p>
+        Escolha, baixe, imprima e comece.
+    </p>
+
+
+    <a href="#oferta" class="btn">
+
+        QUERO CONHECER A OFERTA
+
+        <small>
+            👆 Ver o kit completo
+        </small>
+
+    </a>
+
+</div>
+
+</section>
+
+
+
+<!-- RODAPÉ -->
+
+<footer class="rodape">
+
+    <strong>
+        KIT MENTE ATIVA
+    </strong>
+
+    <p>
+        Produto digital. Nenhum material físico será enviado.
+    </p>
+
+    <p>
+        O conteúdo possui finalidade educativa e não substitui
+        acompanhamento pedagógico, psicológico, médico ou terapêutico.
+    </p>
+
+</footer>
+
+
+
+<!-- BOTÃO FIXO -->
+
+<div class="fixo">
+
+    <div class="fixo-preco">
+
+        <small>
+            KIT COMPLETO
+        </small>
+
+        <strong>
+            R$ 19,90
+        </strong>
+
+    </div>
+
+
+   <a href="https://pay.kiwify.com.br/ijBXIh8" class="btn pulse">
+    🔒 QUERO ACESSAR AGORA
+    <small>Clique para continuar para o pagamento</small>
+</a>
+
+</div>
+
+
+</body>
+
+</html>
+hrefhref
